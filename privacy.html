@@ -3,34 +3,93 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacidad - Danaus</title>
-  <meta name="description" content="Politica de privacidad de Danaus.">
+  <meta name="theme-color" content="#f4f1ed">
+  <title>Privacidad · Danaus</title>
+  <meta name="description" content="Política de privacidad de Danaus.">
+  <link rel="canonical" href="https://danaus.app/privacy.html">
+  <link rel="icon" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="page narrow">
-    <nav class="topbar" aria-label="Navegacion principal">
-      <a class="brand" href="index.html">Danaus</a>
-      <div class="navlinks">
-        <a href="support.html">Soporte</a>
-        <a aria-current="page" href="privacy.html">Privacidad</a>
-      </div>
-    </nav>
+  <a class="skip-link" href="#main" data-copy="skip">Saltar al contenido</a>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <a class="brand" href="index.html">
+      <img src="assets/danaus-icon.png" alt="" width="40" height="40">
+      <span>Danaus</span>
+      <small>v1.0</small>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#como" data-copy="navHow">Cómo funciona</a>
+      <a href="index.html#personas" data-copy="navPeople">Personas</a>
+      <a aria-current="page" href="privacy.html" data-copy="privacy">Privacidad</a>
+      <a href="support.html" data-copy="support">Soporte</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-button language-button" type="button" aria-label="Cambiar idioma"><span aria-hidden="true">EN</span></button>
+      <button class="icon-button theme-button" type="button" aria-label="Cambiar tema"><span aria-hidden="true">◐</span></button>
+      <a class="nav-cta" href="index.html" data-copy="backHome">Inicio</a>
+    </div>
+  </nav>
+
+  <main class="document-page" id="main">
+    <header class="document-header">
+      <p class="eyebrow" data-copy="privacyPolicyEyebrow">Privacidad</p>
+      <h1 data-copy="privacyPolicyTitle">Política de privacidad.</h1>
+      <p data-copy="privacyPolicyLead">Danaus es una aplicación personal para organizar personas, ocasiones y regalos. Esta política explica qué información utiliza y dónde se almacena.</p>
+      <p class="document-meta" data-copy="privacyEffective">En vigor desde el 28 de julio de 2026.</p>
+    </header>
 
     <article class="document">
-      <p class="eyebrow">Privacidad</p>
-      <h1>Politica de privacidad</h1>
-      <p>Danaus guarda la informacion que introduces para organizar regalos, personas, ocasiones, ideas y compras.</p>
-      <h2>Datos y sincronizacion</h2>
-      <p>Cuando iCloud esta disponible, Danaus sincroniza tus datos mediante iCloud privado de Apple. El desarrollador no recibe ni aloja una copia de esos datos.</p>
-      <h2>Contactos</h2>
-      <p>Si das permiso, Danaus puede leer tus contactos para importar personas y fechas asociadas. Ese permiso se usa solo para crear o actualizar datos dentro de la app.</p>
-      <h2>Analitica y publicidad</h2>
-      <p>Danaus no incluye publicidad ni seguimiento publicitario.</p>
-      <h2>Contacto</h2>
-      <p>Para preguntas sobre privacidad, escribe desde la pagina de soporte.</p>
+      <h2 data-copy="policyDataTitle">Datos que añades</h2>
+      <p data-copy="policyDataText">Danaus guarda las personas, ocasiones, ideas de regalo, compras, histórico, gustos, aversiones, tallas, fotos, enlaces, precios y notas que decides introducir. Esta información se usa exclusivamente para proporcionar las funciones de la app.</p>
+
+      <h2 data-copy="policyCloudTitle">Almacenamiento e iCloud</h2>
+      <p data-copy="policyCloudText">Los datos se guardan en el dispositivo. Cuando iCloud está disponible, se sincronizan mediante la base privada de CloudKit de tu cuenta de Apple para mantener Danaus actualizado entre tus dispositivos. El desarrollador no recibe ni puede consultar el contenido de esa base privada.</p>
+
+      <h2 data-copy="policyContactsTitle">Contactos y fotos</h2>
+      <p data-copy="policyContactsText">Danaus solicita acceso a Contactos únicamente cuando decides importar personas. Puedes elegir personas concretas con el selector del sistema o permitir una importación más amplia. La cámara y la fototeca sólo se solicitan cuando decides añadir o cambiar una foto.</p>
+
+      <h2 data-copy="policyNotificationsTitle">Notificaciones</h2>
+      <p data-copy="policyNotificationsText">Los recordatorios se programan localmente en el dispositivo. Danaus no envía al desarrollador los nombres, las ocasiones ni el contenido de las notificaciones. CloudKit puede utilizar notificaciones remotas silenciosas de Apple para informar a la app de cambios en tu base privada.</p>
+
+      <h2 data-copy="policyTrackingTitle">Seguimiento, publicidad y analítica</h2>
+      <p data-copy="policyTrackingText">Danaus no contiene publicidad, SDK de analítica ni seguimiento de terceros. No vende ni comparte datos personales con anunciantes o intermediarios de datos.</p>
+
+      <h2 data-copy="policyControlTitle">Control y eliminación</h2>
+      <p data-copy="policyControlText">Puedes editar o eliminar contenido dentro de Danaus y exportar una copia local en formato JSON desde Ajustes. Los datos sincronizados con iCloud también pueden gestionarse desde los ajustes de tu cuenta de Apple.</p>
+
+      <h2 data-copy="policyChangesTitle">Cambios en esta política</h2>
+      <p data-copy="policyChangesText">Si una versión futura cambia de forma material el tratamiento de datos, esta política y la información de privacidad de App Store se actualizarán antes de publicar esa versión.</p>
+
+      <h2 data-copy="policyContactTitle">Contacto</h2>
+      <p><span data-copy="policyContactText">Para cualquier pregunta relacionada con la privacidad puedes escribir desde la página de</span> <a href="support.html" data-copy="supportLower">soporte</a>.</p>
     </article>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <img src="assets/danaus-icon.png" alt="" width="40" height="40">
+        <span>Danaus</span>
+      </a>
+      <p data-copy="footerTagline">Ocasiones, ideas y regalos. Una app personal para iPhone.</p>
+    </div>
+    <div class="footer-links">
+      <h3 data-copy="footerProduct">Producto</h3>
+      <a href="index.html#como" data-copy="navHow">Cómo funciona</a>
+      <a href="index.html#preguntas" data-copy="navQuestions">Preguntas</a>
+    </div>
+    <div class="footer-links">
+      <h3 data-copy="footerHelp">Ayuda</h3>
+      <a href="support.html" data-copy="support">Soporte</a>
+      <a href="privacy.html" data-copy="privacy">Privacidad</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Danaus · v1.0</span>
+      <span data-copy="footerClosing">Hecho con cuidado para quienes disfrutan regalando.</span>
+    </div>
+  </footer>
 </body>
 </html>
-

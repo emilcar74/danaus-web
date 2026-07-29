@@ -3,29 +3,89 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Soporte - Danaus</title>
-  <meta name="description" content="Soporte para Danaus.">
+  <meta name="theme-color" content="#f4f1ed">
+  <title>Soporte · Danaus</title>
+  <meta name="description" content="Ayuda y soporte para Danaus.">
+  <link rel="canonical" href="https://danaus.app/support.html">
+  <link rel="icon" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <main class="page narrow">
-    <nav class="topbar" aria-label="Navegacion principal">
-      <a class="brand" href="index.html">Danaus</a>
-      <div class="navlinks">
-        <a aria-current="page" href="support.html">Soporte</a>
-        <a href="privacy.html">Privacidad</a>
-      </div>
-    </nav>
+  <a class="skip-link" href="#main" data-copy="skip">Saltar al contenido</a>
+  <nav class="site-nav" aria-label="Navegación principal">
+    <a class="brand" href="index.html">
+      <img src="assets/danaus-icon.png" alt="" width="40" height="40">
+      <span>Danaus</span>
+      <small>v1.0</small>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#como" data-copy="navHow">Cómo funciona</a>
+      <a href="index.html#personas" data-copy="navPeople">Personas</a>
+      <a href="privacy.html" data-copy="privacy">Privacidad</a>
+      <a aria-current="page" href="support.html" data-copy="support">Soporte</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-button language-button" type="button" aria-label="Cambiar idioma"><span aria-hidden="true">EN</span></button>
+      <button class="icon-button theme-button" type="button" aria-label="Cambiar tema"><span aria-hidden="true">◐</span></button>
+      <a class="nav-cta" href="index.html" data-copy="backHome">Inicio</a>
+    </div>
+  </nav>
+
+  <main class="document-page" id="main">
+    <header class="document-header">
+      <p class="eyebrow" data-copy="supportEyebrow">Soporte</p>
+      <h1 data-copy="supportTitle">Ayuda con Danaus.</h1>
+      <p data-copy="supportLead">Si has encontrado un problema, tienes una sugerencia o necesitas ayuda con la app, escríbeme. Danaus está hecha y atendida por una persona real.</p>
+    </header>
 
     <article class="document">
-      <p class="eyebrow">Soporte</p>
-      <h1>Ayuda con Danaus</h1>
-      <p>Si necesitas ayuda, quieres informar de un problema o enviar una sugerencia, puedes contactar con el desarrollador.</p>
-      <p><a class="button" href="mailto:soporte@emiliocano.com?subject=Danaus">Escribir a soporte</a></p>
-      <h2>Antes de escribir</h2>
-      <p>Incluye el modelo de dispositivo, la version de iOS y una descripcion breve de lo ocurrido.</p>
+      <h2 data-copy="supportContactTitle">Contactar</h2>
+      <p data-copy="supportContactText">Durante la beta también puedes enviar comentarios y capturas directamente desde TestFlight.</p>
+      <a class="primary-button" href="mailto:soporte@emiliocano.com?subject=Danaus" data-copy="supportButton">Escribir a soporte</a>
+
+      <h2 data-copy="supportUsefulTitle">Qué información resulta útil</h2>
+      <ul>
+        <li data-copy="supportUsefulOne">Qué estabas haciendo y qué esperabas que ocurriera.</li>
+        <li data-copy="supportUsefulTwo">Qué ocurrió realmente.</li>
+        <li data-copy="supportUsefulThree">Modelo de iPhone, versión de iOS y versión de Danaus.</li>
+      </ul>
+      <p data-copy="supportPrivateNote">Evita incluir nombres, fotos, notas o detalles de regalos privados salvo que sean imprescindibles para explicar el problema.</p>
+
+      <h2 data-copy="supportSyncTitle">Si algo no aparece en otro dispositivo</h2>
+      <ol>
+        <li data-copy="supportSyncOne">Comprueba que ambos dispositivos usan la misma cuenta de iCloud.</li>
+        <li data-copy="supportSyncTwo">Abre Ajustes dentro de Danaus y confirma que iCloud aparece como disponible.</li>
+        <li data-copy="supportSyncThree">Mantén Danaus abierta unos instantes en ambos dispositivos.</li>
+        <li data-copy="supportSyncFour">Comprueba de nuevo el dato que acabas de cambiar.</li>
+      </ol>
+      <p data-copy="supportSyncNote">La sincronización utiliza tu base privada de iCloud. El desarrollador no puede consultar su contenido para diagnosticarla.</p>
     </article>
   </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="brand" href="index.html">
+        <img src="assets/danaus-icon.png" alt="" width="40" height="40">
+        <span>Danaus</span>
+      </a>
+      <p data-copy="footerTagline">Ocasiones, ideas y regalos. Una app personal para iPhone.</p>
+    </div>
+    <div class="footer-links">
+      <h3 data-copy="footerProduct">Producto</h3>
+      <a href="index.html#como" data-copy="navHow">Cómo funciona</a>
+      <a href="index.html#preguntas" data-copy="navQuestions">Preguntas</a>
+    </div>
+    <div class="footer-links">
+      <h3 data-copy="footerHelp">Ayuda</h3>
+      <a href="support.html" data-copy="support">Soporte</a>
+      <a href="privacy.html" data-copy="privacy">Privacidad</a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Danaus · v1.0</span>
+      <span data-copy="footerClosing">Hecho con cuidado para quienes disfrutan regalando.</span>
+    </div>
+  </footer>
 </body>
 </html>
-
