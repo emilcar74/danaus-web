@@ -804,6 +804,29 @@ h1 {
   margin-top: 30px;
 }
 
+.app-store-badge {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 10px;
+  border-radius: 12px;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.app-store-badge:hover,
+.app-store-badge:focus-visible {
+  transform: translateY(-2px);
+  opacity: 0.84;
+}
+
+.app-store-badge img {
+  width: 240px;
+  height: auto;
+}
+
+html[data-theme="dark"] .app-store-badge img {
+  content: url("assets/app-store/download-es-white.svg");
+}
+
 .site-footer {
   display: grid;
   grid-template-columns: minmax(260px, 1.7fr) minmax(150px, 0.65fr) minmax(150px, 0.65fr);
