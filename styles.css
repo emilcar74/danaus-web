@@ -760,6 +760,69 @@ h1 {
   line-height: 1.65;
 }
 
+.updates-section {
+  background: var(--surface);
+}
+
+.release-card {
+  max-width: 860px;
+  margin-top: 62px;
+  padding: 34px 38px 38px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-elevated);
+  box-shadow: var(--shadow);
+}
+
+.release-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+}
+
+.release-version {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.release-card h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.08;
+}
+
+.release-status {
+  flex: 0 0 auto;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--accent-fill);
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.release-list {
+  display: grid;
+  gap: 16px;
+  margin: 26px 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+html[data-theme="dark"] .updates-section {
+  background: var(--surface-elevated);
+}
+
 .closing-section {
   min-height: 780px;
   display: flex;
@@ -1094,6 +1157,16 @@ html[data-theme="dark"] .app-store-badge img {
 
   .closing-section {
     min-height: 680px;
+  }
+
+  .release-card {
+    margin-top: 48px;
+    padding: 26px 24px 28px;
+  }
+
+  .release-card-header {
+    flex-direction: column;
+    gap: 14px;
   }
 
   .site-footer {
