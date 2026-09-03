@@ -779,12 +779,6 @@ h1 {
   box-shadow: none;
 }
 
-.release-current-copy {
-  margin: 26px 0 0;
-  color: var(--muted);
-  line-height: 1.55;
-}
-
 .release-card-header {
   display: flex;
   align-items: flex-start;
