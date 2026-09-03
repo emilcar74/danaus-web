@@ -774,6 +774,17 @@ h1 {
   box-shadow: var(--shadow);
 }
 
+.release-card + .release-card {
+  margin-top: 18px;
+  box-shadow: none;
+}
+
+.release-current-copy {
+  margin: 26px 0 0;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .release-card-header {
   display: flex;
   align-items: flex-start;
@@ -808,6 +819,11 @@ h1 {
   color: var(--accent-strong);
   font-size: 0.82rem;
   font-weight: 700;
+}
+
+.release-status-previous {
+  background: var(--surface-muted);
+  color: var(--muted);
 }
 
 .release-list {
