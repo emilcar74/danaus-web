@@ -92,18 +92,25 @@ const translations = {
     updatesEyebrow: "Updates",
     updatesTitle: "An app that improves without losing its calm.",
     updatesLead: "Here you will find the important changes in each Danaus release.",
-    currentReleaseVersion: "Danaus 1.0.2",
-    currentReleaseTitle: "Occasion improvements",
-    currentReleaseStatus: "Available",
+    currentReleaseVersion: "Danaus 1.1",
+    currentReleaseTitle: "Ideas worth sharing",
+    currentReleaseStatus: "Coming soon",
+    release11One: "Share gift ideas through AirDrop or Mail with the gift details only.",
+    release11Two: "Open received ideas in Danaus and add them to your list to organise later.",
+    release11Three: "A new Ideas-to-Shopping flow: moved ideas leave Ideas, and pending gifts can be moved back if you change your mind.",
+    release11Four: "Sort People by first or last name, open their full profile and edit their Likes and Dislikes.",
+    release11Five: "Crop people’s photos before using them.",
+    release11Six: "Accessibility, stability and iOS 27 compatibility improvements.",
     release102One: "You can now delete a specific occasion from a person's profile.",
     release102Two: "Danaus prevents accidentally adding a duplicate occasion to the same person.",
     release102Three: "Stability and accessibility improvements.",
-    previousReleaseVersion: "Danaus 1.0.1",
-    releaseTitle: "Gift creation made simpler",
+    previousReleaseVersion: "Danaus 1.0.2",
+    releaseTitle: "Occasion improvements",
     previousReleaseStatus: "Previous",
-    releaseOne: "Choose a person easily from the recipient list.",
-    releaseTwo: "Assign gifts to a past or future celebration.",
-    releaseThree: "Stability and accessibility improvements.",
+    release101Title: "Gift creation made simpler",
+    release101One: "Choose a person easily from the recipient list.",
+    release101Two: "Assign gifts to a past or future celebration.",
+    release101Three: "Stability and accessibility improvements.",
     closingEyebrow: "Danaus for iPhone",
     closingTitle: "Remembering is the first gift.",
     closingLead: "Danaus is now available on the App Store.",
@@ -163,13 +170,18 @@ const root = document.documentElement;
 const themeMeta = document.querySelector('meta[name="theme-color"]');
 const languageButton = document.querySelector(".language-button");
 const themeButton = document.querySelector(".theme-button");
+const spanishCopies = new Map(
+  [...document.querySelectorAll("[data-copy]")].map((element) => [element.dataset.copy, element.textContent])
+);
 
 function applyLanguage(language) {
   const nextLanguage = language === "en" ? "en" : "es";
   root.lang = nextLanguage;
   document.querySelectorAll("[data-copy]").forEach((element) => {
     const key = element.dataset.copy;
-    const translated = translations[nextLanguage]?.[key];
+    const translated = nextLanguage === "es"
+      ? spanishCopies.get(key)
+      : translations[nextLanguage]?.[key];
     if (translated) element.textContent = translated;
   });
   if (languageButton) {
