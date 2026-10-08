@@ -28,13 +28,13 @@ const translations = {
     stepTwoText: "Note a gift as soon as it comes to mind, assign it to a person and occasion, and add a price, link, photo or notes.",
     stepThreeTitle: "Shop calmly",
     stepThreeText: "Move the idea to Shopping, mark it when ready and keep a private history of what you gave each year.",
-    productEyebrow: "The next occasion",
-    productTitle: "Everything important, at a glance.",
-    productLead: "Danaus opens with a calm, ordered list. Each occasion keeps its colour, each person their context and every date its natural place.",
-    productPointOne: "This week means the current calendar week.",
-    productPointTwo: "The calendar offers another view of the same dates.",
-    productPointThree: "Reminders are scheduled locally on your device.",
-    productPointFour: "An icon shows whether you already have bought gifts for each occasion.",
+    productEyebrow: "New in Danaus 1.2",
+    productTitle: "Making the most of the new iPhone Duo.",
+    productLead: "Danaus introduces a two-pane navigation design so you can view upcoming occasions and each person’s details at the same time.",
+    productPointOne: "Keep the occasion list and each profile visible side by side.",
+    productPointTwo: "Ideas and Shopping gain quick actions to move gifts, mark them bought or open links.",
+    productPointThree: "Select several gifts to manage them together.",
+    productPointFour: "Navigation and accessibility improve throughout the app.",
     filter: "Filter",
     occasions: "Occasions",
     thisWeek: "This week",
@@ -92,13 +92,13 @@ const translations = {
     updatesEyebrow: "Updates",
     updatesTitle: "An app that improves without losing its calm.",
     updatesLead: "Here you will find the important changes in each Danaus release.",
-    currentReleaseVersion: "Danaus 1.1.1",
-    currentReleaseTitle: "More ways to share",
+    currentReleaseVersion: "Danaus 1.2",
+    currentReleaseTitle: "Ready for iPhone Duo",
     currentReleaseStatus: "In review",
-    release111One: "Share your gift ideas with anyone you choose.",
-    release111Two: "Improvements to Occasions: correct ages for recent birthdays, clearer icons and a refreshed filter.",
-    release111Three: "Move gifts directly from your Shopping List back to Ideas.",
-    release111Four: "Visual, accessibility and stability improvements.",
+    release12One: "Danaus is now ready for the new iPhone Duo, with a two-pane navigation design that makes better use of its display.",
+    release12Two: "View upcoming occasions and each person’s details side by side.",
+    release12Three: "Manage Ideas and Shopping faster with new swipe actions: move gifts, mark them as bought, open links, or select several items at once.",
+    release12Four: "Navigation and accessibility improvements throughout the app.",
     release11Version: "Danaus 1.1",
     release11Title: "Ideas worth sharing",
     release11One: "Share gift ideas through AirDrop or Mail with the gift details only.",
@@ -189,6 +189,10 @@ function applyLanguage(language) {
       ? spanishCopies.get(key)
       : translations[nextLanguage]?.[key];
     if (translated) element.textContent = translated;
+  });
+  document.querySelectorAll("[data-src-es][data-src-en]").forEach((image) => {
+    image.src = image.dataset[`src${nextLanguage === "es" ? "Es" : "En"}`];
+    image.alt = image.dataset[`alt${nextLanguage === "es" ? "Es" : "En"}`];
   });
   if (languageButton) {
     languageButton.querySelector("span").textContent = nextLanguage === "es" ? "EN" : "ES";
