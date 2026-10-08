@@ -425,6 +425,10 @@ h1 {
   line-height: 1.65;
 }
 
+.product-copy h2 {
+  font-size: clamp(2.55rem, 4.15vw, 4.35rem);
+}
+
 .steps {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1066,6 +1070,10 @@ html[data-theme="dark"] .app-store-badge img {
   .privacy-copy h2,
   .closing-section h2 {
     font-size: clamp(2.75rem, 13vw, 4rem);
+  }
+
+  .product-copy h2 {
+    font-size: clamp(2.55rem, 11.5vw, 3.65rem);
   }
 
   .steps,
